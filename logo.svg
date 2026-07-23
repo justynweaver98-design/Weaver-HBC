@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" role="img" aria-labelledby="title desc">
+<title id="title">Weaver’s Home Building and Consulting LLC</title>
+<desc id="desc">Gold roofline emblem above the Weaver’s name.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4d17a"/><stop offset=".48" stop-color="#c8942e"/><stop offset="1" stop-color="#f1c45d"/></linearGradient></defs>
+<g fill="none" stroke="url(#g)" stroke-width="14" stroke-linecap="square" stroke-linejoin="miter">
+<path d="M70 82 172 18l72 62 136-64 137 67 74-60 102 66"/>
+<path d="M155 73 245 10l64 56 71-52 72 53 65-55 92 67"/>
+<path d="M223 77h315"/>
+</g>
+<g fill="url(#g)"><path d="M180 38h14v61h-14z"/><path d="M560 39h14v62h-14z"/></g>
+<text x="380" y="142" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="800" letter-spacing="2">WEAVER’S</text>
+<text x="380" y="181" text-anchor="middle" fill="url(#g)" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="8">HOME BUILDING &amp; CONSULTING LLC</text>
+</svg>
