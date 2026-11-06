@@ -23,3 +23,9 @@ section[id]{scroll-margin-top:130px}a,button,summary{-webkit-tap-highlight-color
 
 /* Upcoming featured build: preserve full promotional images and plan. */
 .upcoming-card{border-color:var(--gold)}.build-features{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:28px 0 18px;padding:0}.build-features li{border:1px solid var(--line);padding:9px 16px;color:var(--gold2);font-size:.9rem}.build-note{max-width:750px;color:#c6c4bd;font-size:.9rem}.upcoming-gallery{grid-template-columns:1fr 1.2fr;align-items:start;margin-top:28px;gap:18px}.upcoming-gallery>button:first-child{grid-row:span 2}.upcoming-gallery>button{width:100%}.upcoming-gallery>img,.upcoming-gallery button img{height:auto;width:100%;object-fit:contain}.upcoming-gallery>img:first-child{grid-row:span 2}@media(max-width:590px){.upcoming-gallery{grid-template-columns:1fr}.upcoming-gallery>button:first-child,.upcoming-gallery>img:first-child{grid-row:auto}.build-features{gap:8px}.build-features li{padding:8px 12px}}
+
+/* Bound featured thumbnails independently of source image dimensions. */
+.project-grid .card>img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.project-grid .upcoming-card>img{object-fit:contain;background:#1b1a17}
+.upcoming-gallery>img,.upcoming-gallery button img{max-height:520px;object-fit:contain}
+@media(max-width:590px){.upcoming-gallery>img,.upcoming-gallery button img{max-height:420px}}
