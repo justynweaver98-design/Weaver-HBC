@@ -63,7 +63,6 @@ section[id]{scroll-margin-top:130px}a,button,summary{-webkit-tap-highlight-color
 }
 .verse-reference { display: block; color: var(--gold2); font-size: .88rem; font-style: normal; font-weight: 750; }
 .verse-reference a { text-decoration: underline; text-underline-offset: .22em; }
-#verse-fallback { margin-top: 10px; }
 .verse-sources {
   display: flex;
   flex-wrap: wrap;
