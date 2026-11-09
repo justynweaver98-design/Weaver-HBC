@@ -43,14 +43,17 @@ section[id]{scroll-margin-top:130px}a,button,summary{-webkit-tap-highlight-color
   background: rgba(16, 16, 16, .82);
 }
 .daily-verse h2 { margin: 0; }
-.daily-verse blockquote {
-  margin: 5px 0 8px;
-  font-family: Georgia, serif;
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  line-height: 1.4;
+.daily-verse iframe {
+  display: block;
+  width: 100%;
+  height: 9rem;
+  margin: 8px 0;
+  border: 0;
+  border-radius: 2px;
+  background: var(--paper);
 }
-.verse-meta { display: flex; flex-wrap: wrap; gap: 4px 16px; color: var(--gold2); font-size: .82rem; }
-.verse-meta cite { font-style: normal; font-weight: 700; }
+.verse-meta { color: var(--gold2); font-size: .82rem; }
+@media (max-width: 590px) { .daily-verse iframe { height: 13rem; } }
 .resource-hero { background: linear-gradient(120deg, var(--ink), #28221a); }
 .resource-hero .display { font-size: clamp(2.7rem, 6.5vw, 5.5rem); line-height: 1.05; }
 .resource-hero .breadcrumbs a { text-decoration: underline; text-underline-offset: .2em; }
