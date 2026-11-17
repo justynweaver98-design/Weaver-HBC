@@ -35,4 +35,4 @@ if (modal) {
   modal.addEventListener('keydown', e => { if(e.key === 'Tab') { e.preventDefault(); modal.querySelector('button').focus(); } });
 }
 document.addEventListener('keydown', e => { if (e.key === 'Escape') { closePhoto(); setMenu(false); } });
-window.matchMedia('(min-width: 901px)').addEventListener('change', () => setMenu(false));
+window.matchMedia('(min-width: 1121px)').addEventListener('change', () => setMenu(false));
