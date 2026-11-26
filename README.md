@@ -14,7 +14,7 @@ The public site is https://whbcllc.com/ and is published from this repository th
 
 As of November 26, 2026, both public forms prepare an email to WeaversHBC@gmail.com and offer a downloadable text copy. Preparing details does not send them. The applicant certification and all checked employment preferences are included in the saved application.
 
-Direct FormSubmit submission and completed-PDF upload are prepared behind directSubmissionsEnabled in forms.js. Permission for FormSubmit and the setup test was granted on November 26, 2026. Direct delivery remains disabled until inbox activation and delivery are verified. The live email fallback stays available.
+Direct FormSubmit submission and completed-PDF upload are prepared behind directSubmissionsEnabled in forms.js. Permission for FormSubmit and the setup test was granted on November 26, 2026. The standard setup test reached FormSubmit, which displayed “Check Your Email” and stated that an activation email was sent to WeaversHBC@gmail.com. Direct delivery remains disabled until the inbox activation and delivery are verified. The live email fallback stays available.
 
 To finish activation, use delivery-setup.html to send the clearly labeled setup test through FormSubmit for whbcllc.com, confirm the email in the Home Building inbox, verify delivery, and enable the switch. The file controls accept PDFs or supported project photos with a combined 9 MB limit. Keep reCAPTCHA enabled. Confirm the application attachment reaches the correct inbox before describing email delivery as verified.
 
