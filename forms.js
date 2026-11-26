@@ -1,6 +1,6 @@
 (() => {
-  // Enable after FormSubmit approval, inbox activation and a delivery check.
-  const directSubmissionsEnabled = false;
+  // Owner-approved native FormSubmit delivery. Keep reCAPTCHA enabled.
+  const directSubmissionsEnabled = true;
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if (directSubmissionsEnabled) {
