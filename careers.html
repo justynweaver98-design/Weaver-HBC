@@ -35,13 +35,14 @@
 <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / Build your future with Weaver’s.</nav>
 <h1 class="display">Build your future with Weaver’s.</h1>
 <p class="lead">We welcome applications from people who take pride in their work. Share your construction experience and availability, or use our original three-page PDF.</p>
-<div class="actions"><a class="btn gold" href="#application-form">Complete the Application</a><a class="btn" href="#pdf-application" data-online-only hidden>Upload a Completed PDF</a><a class="btn" href="WHBC_Employment_Application.pdf" download>Download PDF Application</a><a class="btn" href="mailto:WeaversHBC@gmail.com?subject=WHBC%20Employment%20Application">Email a Completed PDF</a></div>
+<div class="actions"><a class="btn gold" href="#application-form">Complete the Application</a><a class="btn" href="#pdf-application" data-online-only>Upload a Completed PDF</a><a class="btn" href="WHBC_Employment_Application.pdf" download>Download PDF Application</a><a class="btn" href="mailto:WeaversHBC@gmail.com?subject=WHBC%20Employment%20Application">Email a Completed PDF</a></div>
 </div></section>
 <section class="section light"><div class="wrap form-wrap">
-<p class="form-note">Complete all applicable sections. Fields marked * are required. For your first job, enter “No prior employment” in Employer 1 and describe your practical experience. You can attach your résumé or additional experience when sending your email.</p>
-<form id="application-form" class="web-form" data-website-form data-form-kind="application" data-direct-action="https://formsubmit.co/WeaversHBC@gmail.com" tabindex="-1" action="mailto:WeaversHBC@gmail.com" method="POST" enctype="text/plain">
+<p class="form-note">Complete all applicable sections. Fields marked * are required. For your first job, enter “No prior employment” in Employer 1 and describe your practical experience. You can attach a PDF résumé below. Keep a copy of your application for your records.</p>
+<form id="application-form" class="web-form" data-website-form data-form-kind="application" data-direct-action="https://formsubmit.co/WeaversHBC@gmail.com" tabindex="-1" action="https://formsubmit.co/WeaversHBC@gmail.com" method="POST" enctype="multipart/form-data">
 <input type="hidden" name="_subject" value="WHBC Employment Application">
 <input type="hidden" name="_template" value="table">
+<input type="hidden" name="_url" value="https://whbcllc.com/careers.html">
 <input type="hidden" name="_next" value="https://whbcllc.com/thank-you.html?type=application">
 <div class="form-honey" aria-hidden="true"><label>Leave this field empty<input name="_honey" tabindex="-1" autocomplete="off"></label></div>
 <h2>Employment application</h2>
@@ -62,23 +63,24 @@
 <label class="consent"><input name="certification-confirmed" type="checkbox" value="Confirmed" required> I have read and confirm the certification above. *</label>
 <div class="form-grid"><div class="field"><label for="signature">Applicant signature — type your full name <span aria-hidden="true">*</span></label><input type="text" id="signature" name="signature" required autocomplete="name" maxlength="254" ></div><div class="field"><label for="signed-date">Date signed <span aria-hidden="true">*</span></label><input type="date" id="signed-date" name="signed-date" required ></div></div>
 </fieldset>
-<div class="field" data-online-only hidden><label for="resume-file">Résumé or supporting document (PDF, up to 9 MB)</label><input type="file" id="resume-file" name="attachment" accept=".pdf,application/pdf" data-pdf-only aria-describedby="resume-file-status"><p class="form-note" id="resume-file-status" data-file-status aria-live="polite"></p></div>
-<p class="form-note" data-delivery-note>After completing the form, download your application details and attach them to an email to WeaversHBC@gmail.com. Add your résumé before sending.</p>
+<div class="field" data-online-only><label for="resume-file">Résumé or supporting document (PDF, up to 9 MB)</label><input type="file" id="resume-file" name="attachment" accept=".pdf,application/pdf" data-pdf-only aria-describedby="resume-file-status"><p class="form-note" id="resume-file-status" data-file-status aria-live="polite"></p></div>
+<p class="form-note" data-delivery-note>FormSubmit processes your details and any attachments and sends them to WeaversHBC@gmail.com. Continue through its confirmation to finish. Keep a copy for your records.</p>
 <p class="form-status" data-form-status role="status" aria-live="polite"></p>
-<button class="btn gold" type="submit">Prepare Application Email</button>
+<button class="btn gold" type="submit">Send Application</button>
 <section class="prepared-result" data-prepared hidden tabindex="-1">
 <h2>Your application email is ready.</h2>
 <p data-email-help></p>
 <div class="actions"><a class="btn" data-download>Download Completed Details</a><a class="btn gold" data-email data-contact-action="application_emails">Open Email to Weaver’s</a></div>
 <p class="form-note">Send your email to complete the submission. You can edit your answers above and prepare them again.</p>
 </section></form>
-<section class="web-form pdf-upload" id="pdf-application" data-online-only hidden tabindex="-1">
+<section class="web-form pdf-upload" id="pdf-application" data-online-only tabindex="-1">
 <h2>Send a completed PDF</h2><p>Already filled out the original application? Enter your own name and email address, then attach the saved PDF.</p>
-<form data-website-form data-form-kind="application" data-direct-action="https://formsubmit.co/WeaversHBC@gmail.com" action="mailto:WeaversHBC@gmail.com" method="POST" enctype="multipart/form-data">
-<input type="hidden" name="_subject" value="WHBC Completed PDF Application"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value="https://whbcllc.com/thank-you.html?type=application">
+<form data-website-form data-form-kind="application" data-direct-action="https://formsubmit.co/WeaversHBC@gmail.com" action="https://formsubmit.co/WeaversHBC@gmail.com" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="_subject" value="WHBC Completed PDF Application"><input type="hidden" name="_template" value="table">
+<input type="hidden" name="_url" value="https://whbcllc.com/careers.html"><input type="hidden" name="_next" value="https://whbcllc.com/thank-you.html?type=application">
 <div class="form-honey" aria-hidden="true"><label>Leave this field empty<input name="_honey" tabindex="-1" autocomplete="off"></label></div>
 <div class="form-grid"><div class="field"><label for="sender-name">Your full name (sender) *</label><input id="sender-name" name="name" autocomplete="name" maxlength="150" required></div><div class="field"><label for="sender-email">Your email address (sender) *</label><input id="sender-email" name="email" type="email" autocomplete="email" maxlength="254" required></div><div class="field full"><label for="application-file">Completed application (PDF, up to 9 MB) *</label><input id="application-file" name="attachment" type="file" accept=".pdf,application/pdf" data-pdf-only aria-describedby="application-file-status" required><p id="application-file-status" class="form-note" data-file-status aria-live="polite"></p></div></div>
-<p class="form-note" data-delivery-note></p><p class="form-status" data-form-status role="status" aria-live="polite"></p><button class="btn gold" type="submit">Send Application</button>
+<p class="form-note" data-delivery-note>FormSubmit processes your details and any attachments and sends them to WeaversHBC@gmail.com. Continue through its confirmation to finish. Keep a copy for your records.</p><p class="form-status" data-form-status role="status" aria-live="polite"></p><button class="btn gold" type="submit">Send Application</button>
 </form></section>
 </div></section>
 </main>
@@ -88,6 +90,6 @@
 <div><b>Service Areas</b><p>Barnesville · Zebulon · Griffin · Jackson · McDonough · Thomaston · Forsyth · Middle Georgia<br><a href="small-projects.html">Small Projects</a> · <a href="financing.html">Financing</a> · <a href="careers.html">Careers</a> · <a href="quote.html#project-form">Request a Quote</a></p></div>
 </div><div class="wrap copyright">© 2026 Weaver’s Home Building & Consulting LLC. Licensed and insured. Certificate of insurance available upon request.<small class="verse-credit">Scripture taken from the Holy Bible, New International Version®, NIV®. Copyright © 1973, 1978, 1984, 2011 by Biblica, Inc.® Used by permission. All rights reserved worldwide.</small></div></footer>
 <script src="script.js?v=20261126" defer></script>
-<script src="forms.js?v=20261126" defer></script>
+<script src="forms.js?v=20261126-delivery" defer></script>
 <nav class="mobile-contact" aria-label="Quick contact"><a href="tel:+14044448768">Call Scott</a><a href="quote.html#project-form">Request a Quote</a></nav></body>
 </html>

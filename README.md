@@ -29,3 +29,9 @@ The native photo dialog supports Previous, Next, arrow keys and Escape, and retu
 Google Search Console uses the verification tag in the homepage head. Keep it in place after verification. sitemap.xml lists public content pages only.
 
 A separate private activity report has not been connected. AppDeploy refused the new deployment because the current plan’s deployment window expired. Do not reuse Weaver Hydro’s report endpoint or search verification token for this site.
+
+## Prepared activation branch
+
+This branch contains the tested direct-delivery change for the two-step project request, full online application, and completed-PDF upload. The live main branch continues to prepare emails while the Home Building inbox confirmation is pending. After that confirmation, verify delivery to the business inbox and publish this branch.
+
+Browser checks passed for the native endpoint and multipart form settings, project selection, contact preferences, and PDF validation. Invalid file types, empty PDFs, and attachments over 9 MB were rejected. An uppercase PDF extension was accepted and cleared the prior error. No real applicant information was used in testing.

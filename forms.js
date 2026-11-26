@@ -1,6 +1,6 @@
 (() => {
-  // Enable after FormSubmit approval, inbox activation and a delivery check.
-  const directSubmissionsEnabled = false;
+  // Publish direct delivery after the business inbox activation is confirmed.
+  const directSubmissionsEnabled = true;
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if (directSubmissionsEnabled) {
