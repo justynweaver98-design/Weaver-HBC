@@ -12,13 +12,13 @@ The public site is https://whbcllc.com/ and is published from this repository th
 
 ## Form delivery status
 
-As of November 26, 2026, both public forms prepare an email to WeaversHBC@gmail.com and offer a downloadable text copy. Preparing details does not send them. The applicant certification and all checked employment preferences are included in the saved application.
+The project quote, full online employment application, and completed-PDF upload submit directly through FormSubmit to WeaversHBC@gmail.com. Native HTML submission also works without JavaScript. Direct submission was explicitly approved by the owner on November 26, 2026.
 
-Direct FormSubmit submission and completed-PDF upload are prepared behind directSubmissionsEnabled in forms.js. Permission for FormSubmit and the setup test was granted on November 26, 2026. The standard setup test reached FormSubmit, which displayed “Check Your Email” and stated that an activation email was sent to WeaversHBC@gmail.com. Direct delivery remains disabled until the inbox activation and delivery are verified. The live email fallback stays available.
+The setup request passed FormSubmit’s human verification and returned to https://whbcllc.com/thank-you.html?type=setup. That verifies acceptance of the setup request. The Home Building inbox is not connected to this workspace, so actual inbox receipt and attachment delivery have not been independently verified.
 
-To finish activation, use delivery-setup.html to send the clearly labeled setup test through FormSubmit for whbcllc.com, confirm the email in the Home Building inbox, verify delivery, and enable the switch. The file controls accept PDFs or supported project photos with a combined 9 MB limit. Keep reCAPTCHA enabled. Confirm the application attachment reaches the correct inbox before describing email delivery as verified.
+Keep reCAPTCHA enabled. The file controls accept PDFs or supported project photos with a combined 9 MB limit. The original application PDF and direct email link remain available on Careers. Confirm the application attachment reaches the business inbox before describing inbox delivery as verified.
 
-The thank-you page is prepared for the direct-submit return and is excluded from indexing. It is not in the sitemap.
+The thank-you page handles the native submit return and is excluded from indexing. It is not in the sitemap. delivery-setup.html is an unindexed page for a clearly labeled setup test containing no real applicant information.
 
 ## Shared behavior
 
@@ -30,8 +30,6 @@ Google Search Console uses the verification tag in the homepage head. Keep it in
 
 A separate private activity report has not been connected. AppDeploy refused the new deployment because the current plan’s deployment window expired. Do not reuse Weaver Hydro’s report endpoint or search verification token for this site.
 
-## Prepared activation branch
+## Form validation
 
-This branch contains the tested direct-delivery change for the two-step project request, full online application, and completed-PDF upload. The live main branch continues to prepare emails while the Home Building inbox confirmation is pending. After that confirmation, verify delivery to the business inbox and publish this branch.
-
-Browser checks passed for the native endpoint and multipart form settings, project selection, contact preferences, and PDF validation. Invalid file types, empty PDFs, and attachments over 9 MB were rejected. An uppercase PDF extension was accepted and cleared the prior error. No real applicant information was used in testing.
+Browser checks passed for the native endpoint and multipart form settings, project selection, contact preferences, required fields, and PDF validation. Invalid file types, empty PDFs, and attachments over 9 MB were rejected. An uppercase PDF extension was accepted and cleared the prior error. No real applicant information was used in testing.

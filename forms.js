@@ -1,5 +1,5 @@
 (() => {
-  // Publish direct delivery after the business inbox activation is confirmed.
+  // Owner-approved native FormSubmit delivery. Keep reCAPTCHA enabled.
   const directSubmissionsEnabled = true;
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
