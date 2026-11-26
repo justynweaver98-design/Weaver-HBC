@@ -33,10 +33,41 @@
             <div class="field full"><label for="setup-message">Test message</label><textarea id="setup-message" name="message" rows="4" readonly>Authorized website setup test for Weaver Home Building. This is a test, not a customer inquiry. Please confirm the FormSubmit activation email for whbcllc.com so project requests and employment applications can reach this inbox.</textarea></div>
           </div>
           <p class="form-note">FormSubmit processes the business address and this test message. Complete its confirmation, then check the Home Building inbox and Spam folder for the activation email.</p>
-          <button class="btn gold" type="submit">Send Setup Test to Home Building</button>
+          <p id="setup-status" class="form-status" role="status" aria-live="polite"></p>
+          <div class="actions">
+            <button class="btn gold" type="submit">Send Setup Test to Home Building</button>
+            <button class="btn" type="submit" data-native>Continue with FormSubmit</button>
+          </div>
         </form>
       </div>
     </section>
   </main>
+  <script>
+    const setupForm = document.querySelector('form');
+    const setupStatus = document.getElementById('setup-status');
+    setupForm.addEventListener('submit', async event => {
+      if (event.submitter.hasAttribute('data-native')) return;
+      event.preventDefault();
+      const button = event.submitter;
+      button.disabled = true;
+      setupStatus.textContent = 'Sending the setup test…';
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/WeaversHBC@gmail.com', {
+          method: 'POST',
+          headers: { Accept: 'application/json' },
+          body: new FormData(setupForm),
+          signal: AbortSignal.timeout(25000)
+        });
+        const result = await response.json();
+        if (!response.ok) throw new Error('The submission service did not accept the request.');
+        setupStatus.textContent = 'FormSubmit response — ' + (result.message || 'Check the Home Building inbox for activation or test delivery.');
+        setupStatus.dataset.accepted = String(result.success);
+      } catch {
+        setupStatus.textContent = 'The setup request could not be confirmed. Use Continue with FormSubmit to complete the test through its confirmation page.';
+      } finally {
+        button.disabled = false;
+      }
+    });
+  </script>
 </body>
 </html>
