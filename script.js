@@ -72,3 +72,9 @@ if (viewer) {
     previousFocus?.focus();
   });
 }
+
+const legacyProjects = {"1": "project-modern-farmhouse.html", "2": "project-craftsman-family-home.html", "3": "project-timber-craftsman.html", "4": "project-executive-country-estate.html", "5": "project-rustic-modern-retreat.html", "6": "project-family-homestead.html", "7": "project-new-home-taking-shape.html"};
+if (location.pathname === "/" || location.pathname.endsWith("/index.html")) {
+  const oldProject = location.hash.match(/^#gallery-([1-7])$/);
+  if (oldProject) location.replace(legacyProjects[oldProject[1]]);
+}

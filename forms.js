@@ -111,6 +111,7 @@
       }
       if (!validate(form)) { event.preventDefault(); return; }
       if (directSubmissionsEnabled) {
+        try { sessionStorage.setItem('whbc-pending-form', JSON.stringify({ kind: application ? 'application' : 'project', time: Date.now() })); } catch {}
         submit.disabled = true;
         submit.textContent = 'Continuing to confirmation…';
         return;

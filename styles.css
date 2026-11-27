@@ -212,3 +212,31 @@ figcaption { margin-top: 10px; font-size: .83rem; line-height: 1.5; color: #6260
   .photo-controls button { padding: 10px 12px; }
   .navlinks { max-height: calc(100dvh - 160px - env(safe-area-inset-bottom)); }
 }
+
+.project-facts { color: #47361e; }
+.project-facts li { border-color: #b7a98e; color: #47361e; }
+.progress-feature { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--line); }
+.progress-feature img { width: 100%; max-height: 320px; object-fit: cover; border-radius: 4px; }
+.progress-feature h3 { font: 500 2rem Georgia, serif; margin: 12px 0; }
+.text-link { text-decoration: underline; text-underline-offset: 4px; }
+.planning-note { border: 1px solid var(--line); padding: 28px; background: var(--ink2); }
+.planning-note h3 { color: var(--gold2); font: 500 1.6rem Georgia, serif; margin-top: 0; }
+.service-example { margin-top: 40px; max-width: 580px; }
+.service-example .card { color: white; }
+.service-example .card img { width: 100%; }
+.support-service { padding: 24px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 130px; max-width: 800px; }
+.support-service h3 { font: 500 1.6rem Georgia, serif; color: var(--gold2); }
+.light .gallery img { border: 1px solid #d6cebe; }
+@media (max-width: 700px) { .progress-feature { grid-template-columns: 1fr; gap: 20px; } }
+
+.privacy-copy { max-width: 860px; }
+.section .privacy-copy h2 { margin-top: 36px; font-size: 1.7rem; }
+.privacy-links { padding-bottom: 22px; display: flex; gap: 20px; align-items: center; font-size: .85rem; }
+.privacy-links a { text-decoration: underline; }
+.privacy-links button { border: 0; padding: 0; background: transparent; color: inherit; text-decoration: underline; font: inherit; cursor: pointer; }
+.analytics-choice { position: fixed; z-index: 90; left: 20px; bottom: 20px; max-width: 560px; padding: 20px; background: #f4f0e8; color: #20201d; border: 1px solid #8b744c; box-shadow: 0 4px 32px #0005; }
+.analytics-choice p { margin: 0 0 14px; font-size: .95rem; }
+.analytics-choice a { text-decoration: underline; }
+.analytics-choice div { display: flex; flex-wrap: wrap; gap: 12px; }
+.analytics-choice button { background: #171714; color: #fff; border: 1px solid #171714; padding: 12px 18px; font: inherit; font-weight: 700; cursor: pointer; }
+@media (max-width: 700px) { .analytics-choice { left: 12px; right: 12px; bottom: calc(68px + env(safe-area-inset-bottom)); } }
